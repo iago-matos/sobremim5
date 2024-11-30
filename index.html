@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1a6a8a;
+        }
+        #thankYouMessage {
+            display: none;
+            margin-top: 10px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bem-vindo ao Meu Site Pessoal!</h1>
+    <h2>Sobre Mim</h2>
+    <section>
+        <p>Olá! Meu nome é Iago Barbosa, tenho 24 anos. Curso  ADS na Faculdade Munipal de Palhoça, trabalho como monitor em uma escola de cursos profissionalizantes.</p>
+    </section>
+
+    <h2>Meus Hobbies
+
+        
+    </h2>
+    <section>
+        <ul>
+            <li>🎨 Academia</li>
+            <li>📚 Leitura de Livros</li>
+            <li>🏃🏿 Correr</li>
+            <li>🌄 Trilha</li>
+            <li>🤳🏿 Video maker</li>
+
+        </ul>
+    </section>
+
+    <h2>Contato</h2>
+    
+        
+        <section>
+            <p>Você pode entrar em contato comigo através do meu e-mail: <a href="mailto:seuemail@example.com">iago.barbosa@aluno.fmpsc.edu.br</a></p>
+            <p>Ou me seguir nas redes sociais:</p>
+            <ul>
+                <li><a href="www.linkedin.com/in/iago-de-matos-barbosa-b25b88178" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/iagobarbos_a/profilecard/?igsh=aDZpb2E5dXB2NHpr" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/iago-matos" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+    
+
+        <h3>Envie uma Mensagem</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <p id="thankYouMessage">Obrigado pela sua mensagem!</p>
+    </section>
+
+    <script>
+        // Exemplo de um pequeno script em JavaScript
+        console.log("Bem-vindo ao meu site pessoal!");
+
+        // Função para lidar com o envio do formulário
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Exibe a mensagem de agradecimento
+            document.getElementById('thankYouMessage').style.display = 'block';
+
+            // Limpa os campos do formulário
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+
+</body
+</html>
